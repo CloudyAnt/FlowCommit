@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>cn.itscloudy.flowcommit</id>
+    <name>FlowCommit</name>
+    <version>1.0.0</version>
+    <vendor email="iiim.cloudy@gmail.com" url="https://cloudyant.github.io/">FlowCommit</vendor>
+
+    <idea-version since-build="222"/>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="FlowCommit" icon="/icons/favicon.png" secondary="false" anchor="bottom"
+                    canCloseContents="true" factoryClass="cn.itscloudy.flowcommit.plugin.FcToolWindowFactory"/>
+        <postStartupActivity implementation="cn.itscloudy.flowcommit.plugin.FcStartupActivity"/>
+    </extensions>
+</idea-plugin>
